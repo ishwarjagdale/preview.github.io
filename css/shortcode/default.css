@@ -121,16 +121,16 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
     color: #555;
     margin-top: 0px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 p {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: normal;
     color: #555;
     font-size: 14px;
@@ -1828,7 +1828,7 @@ textarea:focus {
 }
 
 .categoris-area .separator i,
-.upcoming-event-area .separator i {
+.upcoming-event-area .separator i, .courses-details .separator i {
     background: #fff none repeat scroll 0 0;
 }
 

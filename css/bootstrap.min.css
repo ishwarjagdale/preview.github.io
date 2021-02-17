@@ -350,13 +350,13 @@ textarea {
 }
 
 a {
-    color: #337ab7;
+    color: #000;
     text-decoration: none
 }
 
 a:hover,
 a:focus {
-    color: #23527c;
+    color: #000;
     text-decoration: underline
 }
 
@@ -630,12 +630,12 @@ mark,
 }
 
 .text-primary {
-    color: #337ab7
+    color: #000
 }
 
 a.text-primary:hover,
 a.text-primary:focus {
-    color: #286090
+    color: #000
 }
 
 .text-success {

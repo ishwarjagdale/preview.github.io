@@ -52,13 +52,13 @@ NOTE: This is Slider style file. All Slider related style included in this file.
 .slider-text h2 {
     color: #fff;
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .slider-text>p {
     color: #fff;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 18px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
     margin: 14px 0 39px;
 }
 

@@ -29,7 +29,7 @@ NOTE: This is Footer style file. All footer related style included in this file.
 }
 
 .footer-text-all li>a:hover {
-    color: #0151b0;
+    opacity: 0.7;
 }
 
 .footer-text.footer-social>ul {

@@ -489,6 +489,9 @@
 /* small mobile :320px. */
 
 @media (max-width: 767px) {
+    .course-categoris span {
+        padding-right: 10px;
+    }
     .single-categori i {
         font-size: 25px;
     }
@@ -1112,6 +1115,7 @@
     }
     .upcoming-date {
         text-align: left;
+        display: none!important;
     }
     .upcoming-date {
         background: none;
@@ -1168,4 +1172,5 @@
     .boxed-layout.wrapper {
         width: 450px;
     }
+    
 }
