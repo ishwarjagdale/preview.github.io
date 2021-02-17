@@ -2403,3 +2403,7 @@ h2.page-title {
 .course-categoris span {
     font-weight: normal;
 }
+.cust-title {
+    font-size: 30px;
+    font-weight: bold;
+}
