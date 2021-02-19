@@ -1378,6 +1378,7 @@ h3.cate-title::before {
     font-weight: normal;
     padding: 10px 0;
     text-transform: capitalize;
+    line-height: 28px;
 }
 
 .course-categoris li:first-child {
@@ -2398,6 +2399,7 @@ h2.page-title {
 }
 .course-categoris li {
     font-weight: 600;
+    display: flex;
 }
 .course-categoris span {
     font-weight: normal;
@@ -2411,6 +2413,7 @@ h2.page-title {
 }
 .volunSocial {
     float: right;
+    text-align: right;
 }
 .volunSocial a {
     padding: 12px 10px;
@@ -2435,4 +2438,7 @@ a.fa.fa-linkedin:hover {
 }
 a.fa.fa-github:hover {
     color: #000;
+}
+#volunteer {
+    max-height: 400px;
 }
