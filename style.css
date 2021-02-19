@@ -1335,7 +1335,6 @@ a.button.extra-small.news-btn span {
 }
 
 .course-details-img {
-    margin-bottom: 38px;
     overflow: hidden;
 }
 
@@ -2406,4 +2405,34 @@ h2.page-title {
 .cust-title {
     font-size: 30px;
     font-weight: bold;
+}
+.single-categori.mb-30 {
+    height: 175px;
+}
+.volunSocial {
+    float: right;
+}
+.volunSocial a {
+    padding: 12px 10px;
+    opacity: 0.8;
+    line-height: 4px;
+}
+.volunSocial a:hover {
+    color:inherit;
+    opacity: 1;
+    transition: all 0.2s ease-in;
+    background: #e4e4e4;
+    border-radius: 100%;
+}
+a.fa.fa-facebook:hover {
+    color: blue;
+}
+a.fa.fa-instagram:hover {
+    color: purple;
+}
+a.fa.fa-linkedin:hover {
+    color: blue;
+}
+a.fa.fa-github:hover {
+    color: #000;
 }
