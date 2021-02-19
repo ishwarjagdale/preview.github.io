@@ -637,7 +637,14 @@
         width: 100%;
     }
     .slider-text>p {
-        display: none;
+        display: block;
+        font-size: smaller;
+        opacity: 0.8;
+        margin: -15px 0px;
+    }
+    .wide-title {
+        letter-spacing: 2px;
+        font-weight: 900!important;
     }
     .slider-text h1 {
         font-size: 20px;

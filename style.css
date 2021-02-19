@@ -2319,7 +2319,8 @@ h2.page-title {
 }
 
 .single-upcoming:hover .date-all>span {
-    color: darkgrey;
+    color: black;
+    opacity: 0.5;
 }
 
 .news-page-area .published3,
@@ -2441,4 +2442,7 @@ a.fa.fa-github:hover {
 }
 #volunteer {
     max-height: 400px;
+}
+div.separator.my.mtb-15 i {
+    font-size: 18px;
 }
