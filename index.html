@@ -296,9 +296,9 @@
                         <div class="course-left-sidebar">
                             <div class="course-details-img">
                                 <div class="mt-30 gallery-img mb-30">
-                                    <img id="volunteer" src="images/volunteers/group.png" alt="">
+                                    <img id="volunteer" src="images/volunteers/opengroup.jpg" alt="">
                                     <div class="gallery-view">
-                                        <a class="img-poppu" href="images/volunteers/group.png">
+                                        <a class="volunteer-popup" href="images/volunteers/opengroup.jpg">
                                             <i class="fa fa-search-plus"></i>
                                         </a>
                                     </div>
@@ -376,7 +376,6 @@
                                 <li title="Event Time Handler"><div class="col-md-8 col-sm-8 col-xs-8 volunteer">Abhinav Yadav</div>
                                     <div class="col-md-4 col-sm-4 col-xs-4 volunSocial">
                                         <a href="https://www.linkedin.com/in/abhinav-yadav-939820206/" class="fa fa-linkedin" target="_blank"></a></div></li>
-                                <li title="Event Time Handler"><div class="col-md-8 col-sm-8 col-xs-8 volunteer">Mitali Wagh</div></li>
                             </ul>
                         </div>
                     </div>
@@ -466,7 +465,7 @@
             },
             function (event) {
                 image = document.getElementById("volunteer");
-                image.setAttribute('src', 'images/volunteers/group.png');
+                image.setAttribute('src', 'images/volunteers/opengroup.jpg');
         }
         );
         
@@ -550,6 +549,16 @@
         gallery: {
             enabled: true
         }
+    });
+    $('.volunteer-popup').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: false
+        },
+        zoom: {
+            enabled: false
+        }
+        
     });
 
     $('[data-toggle="tooltip"]').tooltip();
