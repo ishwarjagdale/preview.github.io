@@ -671,6 +671,7 @@
     .logo {
         padding: 10px 0;
         text-align: center;
+        margin-top: 0px;
     }
     .header-top-info ul li:last-child {
         margin-bottom: 0px;
