@@ -489,6 +489,10 @@
 /* small mobile :320px. */
 
 @media (max-width: 767px) {
+    .mybox {
+        position: initial!important;
+        top: 0!important;
+    }
     .course-categoris span {
         padding-right: 10px;
     }

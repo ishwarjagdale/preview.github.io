@@ -296,9 +296,9 @@
                         <div class="course-left-sidebar">
                             <div class="course-details-img">
                                 <div class="mt-30 gallery-img mb-30">
-                                    <img id="volunteer" src="images/volunteers/opengroup.jpg" alt="">
+                                    <img id="volunteer" src="images/volunteers/opengroup.webp" alt="">
                                     <div class="gallery-view">
-                                        <a class="volunteer-popup" href="images/volunteers/opengroup.jpg">
+                                        <a class="volunteer-popup" href="images/volunteers/opengroup.webp">
                                             <i class="fa fa-search-plus"></i>
                                         </a>
                                     </div>
@@ -345,17 +345,7 @@
                                                 <a href="https://www.linkedin.com/in/vedangi-thombare-979235204/" class="fa fa-linkedin" target="_blank"></a>
                                             </div></li>
                                 </ul>
-                                
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="course-categoris">
-                        <div class="col-md-4">
-                            <h3 class="cate-title mt-15">Graphics</h3>
+                                <h3 class="cate-title mt-15">Graphics</h3>
                                 <ul>
                                     <li><div class="col-md-8 col-sm-8 col-xs-8 volunteer">Rutumbhara Kale</div>
                                         <div class="col-md-4 col-sm-4 col-xs-4 volunSocial">
@@ -367,10 +357,11 @@
                                             <a href="https://www.instagram.com/atharv_d007/" class="fa fa-instagram" target="_blank"></a>
                                             </div>
                                     </li>
+                                    <li title="Event Manager"><div class="col-md-8 col-sm-8 col-xs-8 volunteer">Vrushali Kale</div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 volunSocial">
+                                        <a href="https://www.linkedin.com/in/vrushali-kale-a16927205/" class="fa fa-linkedin" target="_blank"></a></div></li>
                                 </ul> 
-                        </div>
-                        <div class="col-md-4">
-                            <h3 class="cate-title mt-15">Event Managers</h3>
+                                <h3 class="cate-title mt-15">Event Managers</h3>
                             <ul>
                                 <li title="Event Manager"><div class="col-md-8 col-sm-8 col-xs-8 volunteer">Vrushali Kale</div>
                                     <div class="col-md-4 col-sm-4 col-xs-4 volunSocial">
@@ -379,6 +370,9 @@
                                     <div class="col-md-4 col-sm-4 col-xs-4 volunSocial">
                                         <a href="https://www.linkedin.com/in/abhinav-yadav-939820206/" class="fa fa-linkedin" target="_blank"></a></div></li>
                             </ul>
+                                
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -463,11 +457,11 @@
         $(document.getElementsByClassName("volunteer")).hover(
             function(event) {
                 image = document.getElementById("volunteer");
-                image.setAttribute("src", 'images/volunteers/' + this.innerText.trim().replaceAll(' ', '-').toLowerCase() + '.jpg')
+                image.setAttribute("src", 'images/volunteers/' + this.innerText.trim().replaceAll(' ', '-').toLowerCase() + '.webp')
             },
             function (event) {
                 image = document.getElementById("volunteer");
-                image.setAttribute('src', 'images/volunteers/opengroup.jpg');
+                image.setAttribute('src', 'images/volunteers/opengroup.webp');
         }
         );
         
@@ -545,7 +539,19 @@
         }
     });
 
-   
+    $(window).on('scroll', function() {
+        var scroll = $(window).scrollTop();
+        if ((scroll > 3880) && (scroll < 4200)) {
+            $('.mybox').css({'position': 'relative', 'top': (scroll - 3380) / 2 + 'px'});
+        } else {
+
+        }  
+        if (scroll < 3880) {
+            $('.mybox').css({'position': 'relative', 'top': '0px'});
+        } else {
+            
+        }
+    });
 
 
     $('.img-poppu').magnificPopup({
