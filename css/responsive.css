@@ -489,6 +489,21 @@
 /* small mobile :320px. */
 
 @media (max-width: 767px) {
+    .row.event-row-add {
+        visibility: visible!important;
+    }
+    .single-upcoming-text h3 {
+        text-align: center;
+        border-bottom: 0.1px solid #e4e4e4;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    .blog-meta {
+        display: grid;
+    }
+    .published3 {
+        padding-top: 5px;
+    }
     .mybox {
         position: initial!important;
         top: 0!important;
@@ -1146,6 +1161,15 @@
 /* Large Mobile :480px. */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .row.event-row-add {
+        visibility: visible!important;
+    }
+    .blog-meta {
+        display: grid;
+    }
+    .published3 {
+        padding-top: 5px;
+    }
     .container {
         width: 450px
     }

@@ -175,36 +175,49 @@
                 <div class="row">
                     <div class="all-upcoming-event">
                         <div class="col-md-3"></div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="single-upcoming mb-20">
+                        <div class="col-md-6 col-sm-12 event-card up-event">
+                            <div class="row event-row">
+                                <div class="single-upcoming">
                                 
-                                <div class="upcoming-date text-center">
-                                    
-                                    <i class="fa fa-calendar sm-cal"></i>
-                                    <div class="date-all">
-                                        <span>28</span>
-                                        <span class="month">February</span>
+                                    <div class="upcoming-date text-center">
+                                        
+                                        <i class="fa fa-calendar sm-cal"></i>
+                                        <div class="date-all">
+                                            <span>28</span>
+                                            <span class="month">February</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="single-upcoming-text">
-                                    <h3>HACKATHON</h3>
-                                    <div class="blog-meta">
-                                        <span class="published3 hidden-lg hidden-md">
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            28th Feb.
-                                        </span>
-                                        <span class="published3">
-                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                            9:00 am to 1st March 9:00 am
-                                        </span>
-                                        <span class="published4">
-                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                            Online
-                                        </span>
+                                    <div class="single-upcoming-text">
+                                        <h3>HACKATHON</h3>
+                                        <div class="blog-meta">
+                                            <span class="published3 hidden-lg hidden-md">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                28th Feb.
+                                            </span>
+                                            <span class="published3">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                9:00 am to 1st March 9:00 am
+                                            </span>
+                                            <span class="published3">
+                                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                Online
+                                            </span>
+                                        </div>
+                                        
+                                        <p>Participate and find innovative solutions among variety of fields like AI, Cyber Security, Web Application Development, Data Science, etc</p>
                                     </div>
-                                    
-                                    <p>Participate and find innovative solutions among variety of fields like AI, Cyber Security, Web Application Development, Data Science, etc</p>
+                                
+                                
                                 </div>
+                            </div>
+                            <div class="row event-row-add pb-20">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="text-center">
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWaLNNT1PXbruktwUvjw8kJdT8Pdk5jWaUa_aJyHw7QARQBg/viewform"><button class="submit">
+                                                Participate Now!
+                                            </button></a>
+                                        </div>
+                                        </div>
                             </div>
                         </div>
                         <div class="col-md-3"></div>
@@ -461,9 +474,17 @@
                 image = document.getElementById("volunteer");
                 image.setAttribute('src', 'images/volunteers/opengroup.webp');
         }
-        );
-        
-                
+        );      
+    </script>
+    <script>
+        $('.up-event').hover(
+            function(event) {
+                $('.row.event-row-add').css({'visibility': 'visible'})
+            },
+            function(event) {
+                $('.row.event-row-add').css({'visibility': 'collapse'})
+            }
+        )
     </script>
     <script>
         (function($) {
@@ -540,7 +561,7 @@
     $(window).on('scroll', function() {
         var scroll = $(window).scrollTop();
         if ((scroll > 3880) && (scroll < 4200)) {
-            $('.mybox').css({'position': 'relative', 'top': (scroll - 3380) / 2 + 'px'});
+            $('.mybox').css({'position': 'relative', 'top': ((scroll - 3380 - 200) / (scroll / 2000)) + 'PX'});
         } else {
 
         }  
