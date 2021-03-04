@@ -33,6 +33,15 @@
     font-size: 16px;
 }
 
+.gallery-title {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: x-large;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
 
 /* 3pol header end*/
 
@@ -1735,10 +1744,11 @@ p.time-mrg {
     opacity: 1;
 }
 
-.gallery-img>img {
+.gallery-img>img, .gallery-img>iframe {
     transform: scale(1);
     transition: all 0.6s ease-in-out 0s;
     width: 100%;
+
 }
 
 .gallery-img:hover img {
@@ -1800,9 +1810,12 @@ a.fa.fa-github:hover {
 div.separator.my.mtb-15 i {
     font-size: 18px;
 }
-.mybox {
+#mybox {
     position: relative;
     top:0px;
     transition: 0.4s ease all;
     
+}
+.event-media img, .event-media iframe {
+    height: 200px;
 }
