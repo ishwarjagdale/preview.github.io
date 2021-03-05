@@ -504,7 +504,7 @@
     .published3 {
         padding-top: 5px;
     }
-    .mybox {
+    #mybox {
         position: initial!important;
         top: 0!important;
     }
